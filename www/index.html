@@ -8,15 +8,22 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $("#content").html('<iframe src="http://google.com" >');
-
         });
+
+        function ShowHidden() {
+            $("#hiddenStart").show(2000);
+        }
     </script>
     
 </head>
 <body>
     <div>Hello James
         <br />
-        <input id="Button1" type="button" value="push" />
+        <input id="Button1" type="button" value="push" onclick="ShowHidden();" />
+    </div>
+    <div id="hiddenStart" style="display:none;">
+
+        <h1>I Was Hidden!!</h1>
     </div>
 
     <div id="content"></div>
