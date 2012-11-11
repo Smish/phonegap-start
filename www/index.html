@@ -3,13 +3,22 @@
 <head>
     <title></title>
     <script src="Scripts/jquery-1.7.1.js"></script>
+    <script src="Scripts/jquery-jtemplates.js"></script>
+    <script src="Scripts/ServiceProxy.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#content").load("WebForm1.aspx");
+            $("#content").html('<iframe src="http://google.com" >');
+
         });
     </script>
+    
 </head>
 <body>
+    <div>Hello James
+        <br />
+        <input id="Button1" type="button" value="push" />
+    </div>
+
     <div id="content"></div>
 </body>
 </html>
